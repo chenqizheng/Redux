@@ -23,3 +23,6 @@ jobs:
       - run:
           name: Run 
           command: ./gradlew assembleRelease
+      - run:
+          name: MD5
+          command: md5 ./app/build/outputs/apk/release/app-release-unsigned.apk
