@@ -6,5 +6,6 @@ fun <State> sagaMiddleware(
     dispatch: Dispatch,
     next: Middleware<State>
 ): Action {
+    Channel
     return Action("SAGA")
 }
