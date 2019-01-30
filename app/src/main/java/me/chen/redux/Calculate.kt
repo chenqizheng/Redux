@@ -5,6 +5,7 @@ import me.chen.redux.core.Action
 object Clear : Action("Clear")
 object Add : Action("Add")
 object Sub : Action("Sub")
+object INCREMENT_ASYN : Action("INCREMENT_ASYNC")
 
 fun calculate(state: AppState, action: Action): AppState {
     var newState = when (action) {
